@@ -2,12 +2,13 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 from models import create_post, get_posts
 
+
 app = Flask(__name__)
 
 CORS(app)
 
 @app.route('/', methods=['GET', 'POST'])
-def index():
+def index(): 
 
     if request.method == 'GET':
         pass
